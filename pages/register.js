@@ -3,10 +3,10 @@ import Head from "next/head";
 import toast, { Toaster } from "react-hot-toast";
 import { useState } from "react";
 
+import { API_URL } from "../utils/urls";
 import styles from "../styles/Login.module.css";
 
 function login() {
-
     const [email, setEmail] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -17,7 +17,7 @@ function login() {
         event.preventDefault();
 
         axios
-            .post('http://localhost:1337/auth/local/register', {
+            .post(`${API_URL}/auth/local/register`, {
                 username: username,
                 email: email,
                 password: password,
