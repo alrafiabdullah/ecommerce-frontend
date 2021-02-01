@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "name": "The Complete Strapi Course",
+        "content": "The complete strapi course is available on Udemy coupon in description.",
+        "meta_description": "The complete strapi course, the course you should be taking.",
+        "meta_title": "The complete strapi course - entreprenerd store",
+        "price": 12.99,
+        "slug": "the-complete-strapi-course",
+        "published_at": "2021-01-17T11:32:38.861Z",
+        "created_at": "2021-01-17T11:23:18.915Z",
+        "updated_at": "2021-01-17T11:32:38.886Z",
+        "image": {
+            "id": 1,
+            "name": "code.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 1320,
+            "height": 520,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_code.png",
+                    "hash": "thumbnail_code_476c2cf178",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 245,
+                    "height": 97,
+                    "size": 16.94,
+                    "path": null,
+                    "url": "/uploads/thumbnail_code_476c2cf178.png"
+                },
+                "large": {
+                    "name": "large_code.png",
+                    "hash": "large_code_476c2cf178",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 1000,
+                    "height": 394,
+                    "size": 138.49,
+                    "path": null,
+                    "url": "/uploads/large_code_476c2cf178.png"
+                },
+                "medium": {
+                    "name": "medium_code.png",
+                    "hash": "medium_code_476c2cf178",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 750,
+                    "height": 295,
+                    "size": 88.5,
+                    "path": null,
+                    "url": "/uploads/medium_code_476c2cf178.png"
+                },
+                "small": {
+                    "name": "small_code.png",
+                    "hash": "small_code_476c2cf178",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 500,
+                    "height": 197,
+                    "size": 48.06,
+                    "path": null,
+                    "url": "/uploads/small_code_476c2cf178.png"
+                }
+            },
+            "hash": "code_476c2cf178",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 70.39,
+            "url": "/uploads/code_476c2cf178.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-01-17T11:22:19.542Z",
+            "updated_at": "2021-01-17T11:22:19.559Z"
+        }
+    },
+    {
+        "id": 2,
+        "name": "The NextJs with Strapi Course",
+        "content": "This course is in the works, and may never be released. If you are interested check the link in the description.",
+        "meta_description": "The nextjs course description.",
+        "meta_title": "The NextJS with Strapi Course - Entreprenerd Course",
+        "price": 497,
+        "slug": "the-next-js-with-strapi-course",
+        "published_at": "2021-01-17T11:34:17.566Z",
+        "created_at": "2021-01-17T11:34:13.201Z",
+        "updated_at": "2021-01-17T11:34:17.590Z",
+        "image": {
+            "id": 2,
+            "name": "Screenshot 2021-01-16 183724.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 273,
+            "height": 294,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_Screenshot 2021-01-16 183724.png",
+                    "hash": "thumbnail_Screenshot_2021_01_16_183724_77de3b10bf",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 145,
+                    "height": 156,
+                    "size": 37.21,
+                    "path": null,
+                    "url": "/uploads/thumbnail_Screenshot_2021_01_16_183724_77de3b10bf.png"
+                }
+            },
+            "hash": "Screenshot_2021_01_16_183724_77de3b10bf",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 88.13,
+            "url": "/uploads/Screenshot_2021_01_16_183724_77de3b10bf.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-01-17T11:33:16.325Z",
+            "updated_at": "2021-01-17T11:33:16.343Z"
+        }
+    }
+]
