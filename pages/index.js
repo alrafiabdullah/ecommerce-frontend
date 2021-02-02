@@ -1,11 +1,18 @@
+import { useState } from "react";
 import Head from 'next/head';
 import Link from "next/link";
 import styles from '../styles/Home.module.css';
+import IndividualProduct from "../components/Product";
 
 import { fromImagetoURL, API_URL } from "../utils/urls";
 import { twoDecimals } from "../utils/format";
 
 export default function Home({ products }) {
+  const [light, setLight] = useState(true);
+
+  const handleTheme = () => {
+    setLight(light ? false : true);
+  };
 
   return (
     <div>
@@ -13,26 +20,19 @@ export default function Home({ products }) {
         <title>E-Commerce</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {products.map(product => {
-        return <div key={product.id} className={styles.product}>
+      <div className={light ? styles.lightMode : styles.darkMode}>
+        <a><button style={{ padding: "1%", cursor: "pointer" }} onClick={handleTheme}>{light ? "Dark" : "Light"}</button></a>
+        {products.map(product => {
+          return <div key={product.id} className={styles.product}>
 
-          <Link href={`/products/${product.slug}`}>
-            <a>
-              <div className={styles.product__Row}>
-
-                <div className={styles.product__ColImg}>
-                  <img src={fromImagetoURL(product.image)} />
-                </div>
-
-                <div className={styles.product__Col}>
-                  {product.name} ${twoDecimals(product.price)}
-                </div>
-
-              </div>
-            </a>
-          </Link>
-        </div>;
-      })}
+            <Link href={`/products/${product.slug}`}>
+              <a>
+                <IndividualProduct key={product.id} image={product.image} name={product.name} price={product.price} />
+              </a>
+            </Link>
+          </div>;
+        })}
+      </div>
 
     </div>
   );

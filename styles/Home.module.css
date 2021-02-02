@@ -1,4 +1,37 @@
+.lightMode {
+  background-color: #f7f7f7;
+  color: #006790;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.darkMode {
+  background-color: #006790;
+  color: #f7f7f7;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* .main {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+} */
+
 .product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 24px;
   font-size: 24px;
 }

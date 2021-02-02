@@ -29,6 +29,7 @@ const BuyButton = ({ product }) => {
             }
         });
         const session = await res.json();
+        console.log(session.id);
         const result = await stripe.redirectToCheckout({
             sessionId: session.id
         });
