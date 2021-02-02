@@ -14,6 +14,7 @@ const BuyButton = ({ product }) => {
     const router = useRouter();
     const cookies = new Cookies();
     const token = cookies.get("jwt");
+    console.log();
 
     const redirectToLogin = () => (router.push("/login"));
 

@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Head from 'next/head';
 import Link from "next/link";
 import styles from '../styles/Home.module.css';
 import IndividualProduct from "../components/Product";
 
+import AuthContext from "../context/AuthContext";
 import { fromImagetoURL, API_URL } from "../utils/urls";
 import { twoDecimals } from "../utils/format";
 
 export default function Home({ products }) {
   const [light, setLight] = useState(true);
+  const { user } = useContext(AuthContext);
 
   const handleTheme = () => {
     setLight(light ? false : true);
@@ -22,6 +24,7 @@ export default function Home({ products }) {
       </Head>
       <div className={light ? styles.lightMode : styles.darkMode}>
         <a><button style={{ padding: "1%", cursor: "pointer" }} onClick={handleTheme}>{light ? "Dark" : "Light"}</button></a>
+        {user && <p>Welcome to E-Commerce <strong>{user.username}</strong>!</p>}
         {products.map(product => {
           return <div key={product.id} className={styles.product}>
 
